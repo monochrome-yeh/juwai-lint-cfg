@@ -1,0 +1,23 @@
+{
+    // Predefined globals.
+    // Do not add more unless they can be found in every project.
+    "predef": [
+        "window",
+        "document",
+        // jQuery
+        "$",
+        "jQuery",
+        // Juwai
+        "JW"
+    ],
+    // Use strict equality: ===.
+    "eqnull": false,
+    // Use strict mode.
+    "strict": true,
+    // Error for global variables.
+    // You can specify the globals with this code in the scope:
+    // /* globals myGlobal1, myGlobal2, … */
+    "undef":  true,
+    // Error if some variables are not used.
+    "unused": false
+}

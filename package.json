@@ -1,0 +1,20 @@
+{
+  "name": "juwai-lint-cfg",
+  "version": "1.0.0",
+  "description": ".rc files used by travis and other linting tools at Juwai",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juwai/juwai-lint-cfg.git"
+  },
+  "keywords": [
+    "lint",
+    "config"
+  ],
+  "author": "juwai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juwai/juwai-lint-cfg/issues"
+  },
+  "homepage": "https://github.com/juwai/juwai-lint-cfg#readme"
+}
