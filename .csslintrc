@@ -1,0 +1,56 @@
+// You can copy this file locally and delete the last “false” rules.
+// This way, we’ll have less issues later while not having to deal with legacy code as a whole.
+
+// See https://github.com/CSSLint/csslint/wiki/Rules-by-ID
+//
+// `1` is for warnings.
+// `2` is for errors.
+// source: https://gist.github.com/nzakas/1781185#file-csslint-api-js-L4
+{
+    "display-property-grouping": true,
+    "duplicate-properties": true,
+    "empty-rules": 2,
+    "known-properties": 2,
+
+    "adjoining-classes": false,
+    "box-sizing": false,
+    "compatible-vendor-prefixes": true,
+    "gradients": true,
+    "text-indent": true,
+    "vendor-prefix": 2,
+    "fallback-colors": true,
+    "star-property-hack": true,
+    "underscore-property-hack": true,
+    "bulletproof-font-face": true,
+
+    "font-faces": true,
+    "import": 2,
+    "regex-selectors": true,
+    "universal-selector": true,
+    "unqualified-attributes": true,
+    "zero-units": 2,
+    "overqualified-elements": true,
+    "shorthand": true,
+    "duplicate-background-images": true,
+
+    "floats": true,
+    "font-sizes": true,
+    "ids": true,
+    "important": false,
+
+    "outline-none": true,
+
+    "qualified-headings": true,
+    "unique-headings": true,
+
+    "non-link-hover": false,
+
+    // These options are more sensitive when dealing with legacy code…
+    "box-model": true,
+    "font-sizes": true,
+    "ids": true,
+    "overqualified-elements": true,
+    "qualified-headings": true,
+    "unique-headings": true,
+    "universal-selector": true
+}
