@@ -8,7 +8,7 @@
     var process = require( 'process' );
 
     var modulePath = process.cwd();
-    var files     = [
+    var files = [
         '.csslintrc',
         '.editorconfig',
         '.jscsrc',
