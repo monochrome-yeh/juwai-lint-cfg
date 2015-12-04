@@ -15,40 +15,22 @@
         '.jshintrc'
     ];
 
-    // Open the standard input and ask a question.
-    process.stdin.resume();
+    // Get the path of the repository, from the first occurrence of `/node_modules/`.
+    var rootLength = modulePath.indexOf( '/node_modules/' ) + 1;
+    var repositoryRoot = modulePath.slice( 0, rootLength );
+
     process.stdout.write(
-        'What is the name of the folder where the repository lives?\n'
+        '--------------------------------------------------------------------------------\n' +
+        'I will now copy the files into “' + repositoryRoot + '”…\n'
     );
 
-    // When some answer is provided, try to copy the files.
-    process.stdin.once( 'data', function( dest ) {
-        var destPath, destIndex;
+    // Exit current process only once all files are copied.
+    copyFiles( repositoryRoot ).then(function() {
+        process.stdout.write(
+            'All the .rc files for linters were copied successfully. ------------------------\n\n'
+        );
 
-        // Make sure to have a clean user input.
-        // Check if the string exists in the current path.
-        dest = '/' + dest.toString().trim() + '/';
-        destIndex = modulePath.indexOf( dest );
-
-        if ( destIndex !== -1 ) {
-            destPath = modulePath.slice( 0, destIndex + dest.length );
-            process.stdout.write(
-                'I found ' + destPath + '. I will copy the files now…\n'
-            );
-
-            // Exit current process only once all files are copied.
-            copyFiles( destPath ).then(function() {
-                console.log( 'All the files were copied successfully.' );
-                process.exit();
-            });
-        } else {
-            process.stdout.write(
-                'The folder “' + dest + '” doesn’t seem to exist in this ' +
-                'module’s path (' + modulePath + '), try again?\n'
-            );
-
-            process.exit();
-        }
+        process.exit();
     });
 
     /**
@@ -67,7 +49,7 @@
                 var fileRead       = readFileAsync( file );
 
                 return fileRead.then( function( fileContent ) {
-                    console.log( 'Copying ' + file + ' to ' + dest + file + '…' );
+                    process.stdout.write( 'Copying ' + file + ' to ' + dest + file + '…\n' );
 
                     return writeFileAsync( dest + file, fileContent );
                 });
