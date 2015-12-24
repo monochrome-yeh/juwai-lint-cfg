@@ -19,5 +19,5 @@
     // /* globals myGlobal1, myGlobal2, … */
     "undef":  true,
     // Error if some variables are not used.
-    "unused": false
+    "unused": true
 }
