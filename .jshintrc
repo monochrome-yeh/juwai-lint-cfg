@@ -10,14 +10,24 @@
         // Juwai
         "JW"
     ],
+
     // Use strict equality: ===.
     "eqnull": false,
+
     // Use strict mode.
     "strict": true,
+
     // Error for global variables.
     // You can specify the globals with this code in the scope:
     // /* globals myGlobal1, myGlobal2, … */
     "undef":  true,
+
     // Error if some variables are not used.
-    "unused": true
+    "unused": true,
+
+    // Don’t have more than three parameters per function.
+    "maxparams": 3,
+
+    // Limit the nesting to three levels for callbacks.
+    "maxdepth": 3
 }

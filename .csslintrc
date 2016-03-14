@@ -3,54 +3,42 @@
 
 // See https://github.com/CSSLint/csslint/wiki/Rules-by-ID
 //
-// `1` is for warnings.
-// `2` is for errors.
+// false: disable.
+// true:  enable default behaviour.
+// 1:     warnings.
+// 2:     errors.
 // source: https://gist.github.com/nzakas/1781185#file-csslint-api-js-L4
 {
+    "adjoining-classes": false,
+    "box-model": true,
+    "box-sizing": false,
+    "bulletproof-font-face": true,
+    "compatible-vendor-prefixes": true,
     "display-property-grouping": true,
+    "duplicate-background-images": true,
     "duplicate-properties": true,
     "empty-rules": 2,
-    "known-properties": 2,
-
-    "adjoining-classes": false,
-    "box-sizing": false,
-    "compatible-vendor-prefixes": true,
-    "gradients": true,
-    "text-indent": true,
-    "vendor-prefix": 2,
     "fallback-colors": true,
-    "star-property-hack": true,
-    "underscore-property-hack": true,
-    "bulletproof-font-face": true,
-
+    "floats": true,
     "font-faces": true,
+    "font-sizes": 1,
+    "gradients": true,
+    "ids": true,
     "import": 2,
+    "important": false,
+    "known-properties": 2,
+    "non-link-hover": false,
+    "outline-none": true,
+    "overqualified-elements": true,
+    "qualified-headings": true,
     "regex-selectors": true,
+    "shorthand": true,
+    "star-property-hack": true,
+    "text-indent": true,
+    "underscore-property-hack": true,
+    "unique-headings": true,
     "universal-selector": true,
     "unqualified-attributes": true,
+    "vendor-prefix": 2,
     "zero-units": 2,
-    "overqualified-elements": true,
-    "shorthand": true,
-    "duplicate-background-images": true,
-
-    "floats": true,
-    "font-sizes": true,
-    "ids": true,
-    "important": false,
-
-    "outline-none": true,
-
-    "qualified-headings": true,
-    "unique-headings": true,
-
-    "non-link-hover": false,
-
-    // These options are more sensitive when dealing with legacy code…
-    "box-model": true,
-    "font-sizes": true,
-    "ids": true,
-    "overqualified-elements": true,
-    "qualified-headings": true,
-    "unique-headings": true,
-    "universal-selector": true
 }
