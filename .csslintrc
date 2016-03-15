@@ -40,5 +40,5 @@
     "universal-selector": true,
     "unqualified-attributes": true,
     "vendor-prefix": 2,
-    "zero-units": 2,
+    "zero-units": 2
 }
