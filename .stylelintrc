@@ -1,0 +1,136 @@
+{
+    "_comment": "@see https://github.com/stylelint/stylelint/blob/master/docs/user-guide/rules.md",
+    "_not-available-in-actual-version-but-useful": "declaration-block-no-ignored-properties",
+
+    "rules": {
+        "color-hex-case": "lower",
+        "color-hex-length": "short",
+        "color-named": "never",
+        "color-no-invalid-hex": true,
+
+        "font-family-name-quotes": [ "double-where-recommended", {
+            "severity": "warning"
+        }],
+        "font-weight-notation": [ "numeric", {
+            "severity": "warning"
+        }],
+
+        "number-zero-length-no-unit": true,
+
+        "string-no-newline": true,
+        "string-quotes": "double",
+
+        "unit-no-unknown": true,
+        "unit-blacklist": [ ["cm", "mm", "q", "in", "pt", "pc"], {
+            "severity": "warning"
+        }],
+
+        "value-list-comma-space-after": "always-single-line",
+        "value-list-comma-space-before": "never",
+
+        "custom-property-no-outside-root": true,
+
+        "declaration-bang-space-after": "never",
+        "declaration-bang-space-before": "always",
+        "declaration-colon-newline-after": "always-multi-line",
+        "declaration-colon-space-after": null,
+        "declaration-colon-space-before": "never",
+        "declaration-no-important": [ true, {
+            "severity": "warning"
+        }],
+
+        "declaration-block-no-ignored-properties": true,
+        "declaration-block-no-shorthand-property-overrides": true,
+        "declaration-block-semicolon-newline-after": "always-multi-line",
+        "declaration-block-semicolon-newline-before": "never-multi-line",
+        "declaration-block-semicolon-space-after": "always-single-line",
+        "declaration-block-semicolon-space-before": "never",
+        "declaration-block-single-line-max-declarations": 1,
+        "declaration-block-trailing-semicolon": "always",
+
+        "block-closing-brace-newline-after": [ "always", {
+            "ignoreAtRules": ["if", "else"]
+        }],
+        "block-closing-brace-newline-before": [ "always-multi-line", {
+            "ignoreAtRules": ["if", "else"]
+        }],
+        "block-closing-brace-space-after": "always-single-line",
+        "block-closing-brace-space-before": "always-single-line",
+        "block-no-empty": true,
+        "block-opening-brace-newline-after": "always-multi-line",
+        "block-opening-brace-newline-before": null,
+        "block-opening-brace-space-after": [ "always-single-line", "never-multi-line" ],
+        "block-opening-brace-space-before": "always-single-line",
+
+        "selector-combinator-space-after": "always",
+        "selector-combinator-space-before": "always",
+        "selector-id-pattern": "^[^0-9].*",
+        "selector-max-specificity": "1,4,0",
+        "selector-no-id": [ true, {
+            "severity": "warning"
+        }],
+        "selector-no-type": [ true, {
+            "severity": "warning"
+        }],
+        "selector-no-universal": true,
+        "selector-pseudo-element-colon-notation": "single",
+        "selector-type-case": "lower",
+        "selector-list-comma-newline-before": "never-multi-line",
+        "selector-list-comma-space-after": "always-single-line",
+        "selector-list-comma-space-before": "never",
+
+        "rule-nested-empty-line-before": [ "always-multi-line", {
+            "except": [ "first-nested" ],
+            "ignore": [ "after-comment" ]
+        }],
+        "rule-non-nested-empty-line-before": [ "always-multi-line", {
+            "ignore": [ "after-comment" ]
+        }],
+
+        "media-feature-colon-space-after": "always",
+        "media-feature-colon-space-before": "never",
+        "media-feature-no-missing-punctuation": true,
+        "media-feature-range-operator-space-after": "always",
+        "media-feature-range-operator-space-before": "always",
+
+        "media-query-list-comma-newline-after": "always-multi-line",
+        "media-query-list-comma-newline-before": "never-multi-line",
+        "media-query-list-comma-space-after": "always-single-line",
+        "media-query-list-comma-space-before": "never",
+
+        "at-rule-empty-line-before": [ "always", {
+            "except": [
+                "blockless-group",
+                "first-nested"
+            ],
+            "ignore": [ "after-comment" ]
+        }],
+        "at-rule-semicolon-newline-after": "always",
+
+        "comment-empty-line-before": [ "always", {
+            "except": [ "first-nested" ],
+            "ignore": [
+                "stylelint-commands",
+                "between-comments"
+            ]
+        }],
+        "comment-whitespace-inside": "always",
+
+        "max-empty-lines": 1,
+        "max-nesting-depth": [ 3, {
+            "ignore": [ "at-rules-without-declaration-blocks" ]
+        }],
+        "no-browser-hacks": [ true, {
+            "browsers": "ie >= 8, last 3 versions"
+        }],
+
+        "no-descending-specificity": true,
+        "no-duplicate-selectors": [ true, {
+            "severity": "warning"
+        }],
+        "no-indistinguishable-colors": [ true, {
+            "severity": "warning"
+        }],
+        "stylelint-disable-reason": "always-before"
+    }
+}
