@@ -2,6 +2,8 @@
 
 These are files used across our projects to lint our files.
 
+They help you to get familiar with our coding style–guides. They also help to get feedback about common pitfalls earlier in the coding process, instead of when you submit a PR.
+
 ## Install
 
 ### Globally
