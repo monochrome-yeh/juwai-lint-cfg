@@ -2,7 +2,19 @@
 
 These are files used across our projects to lint our files.
 
+They help you to get familiar with our coding style–guides. They also help to get feedback about common pitfalls earlier in the coding process, instead of when you submit a PR.
+
 ## Install
+
+### Globally
+
+If you’re installing this repository as a way to lint your files across all our projects, just run the following command in the folder containing your juwai repositories. Linters should then use these files by default if no file is present in a specific reposirory.
+
+```
+$ npm install juwai/juwai-lint-cfg
+```
+
+### Within a specific project
 
 1. Make sure [node.js](https://nodejs.org/en/download/) is installed in your environment.
 1. `cd` to the root of your project’s repository.
