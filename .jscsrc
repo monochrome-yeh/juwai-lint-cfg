@@ -2,10 +2,9 @@
     // Allow to parse all errors in a file.
     "maxErrors": "Infinity",
 
-    // While idiomatic js guide gets released…
-    // https://github.com/jscs-dev/node-jscs/blob/master/presets/idiomatic.json
-    // -------------------------------------------------------------------------
-    "preset": "jquery",
+    "preset": "idiomatic",
+
+    "disallowOperatorBeforeLineBreak": true,
 
     "requireSpacesInsideParentheses": {
         "all": true,
@@ -17,6 +16,8 @@
             "\""
         ]
     },
+
+    "disallowSpacesInsideParentheses": null,
 
     "disallowSpacesInCallExpression": true,
 
@@ -161,17 +162,16 @@
         "checkRedundantParams": true,
         "checkReturnTypes": true,
         "checkRedundantReturns": true,
-        "requireReturnTypes": true,
         "checkTypes": true,
         "checkRedundantAccess": true,
-        // This should be enabled on next PR, after upgrading JSCS to new version.
-        // "enforceExistence": {
-        //     "allExcept": [
-        //         "expressions",
-        //         "exports",
-        //         "paramless-procedures"
-        //     ]
-        // },
+        "leadingUnderscoreAccess": true,
+        "enforceExistence": {
+            "allExcept": [
+                "expressions",
+                "exports",
+                "paramless-procedures"
+            ]
+        },
         "requireHyphenBeforeDescription": true,
         "requireNewlineAfterDescription": true,
         "requireDescriptionCompleteSentence": true
