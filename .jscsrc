@@ -4,7 +4,12 @@
 
     "preset": "idiomatic",
 
-    "disallowOperatorBeforeLineBreak": true,
+    "disallowOperatorBeforeLineBreak": [
+        "+", ".",
+        "?", ":",
+        "||", "&&"
+    ],
+    "requireOperatorBeforeLineBreak": null,
 
     "requireSpacesInsideParentheses": {
         "all": true,
