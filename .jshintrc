@@ -29,5 +29,8 @@
     "maxparams": 3,
 
     // Limit the nesting to three levels for callbacks.
-    "maxdepth": 3
+    "maxdepth": 3,
+
+    // Identify possibly unsafe line breaks.
+    "laxbreak": true
 }
