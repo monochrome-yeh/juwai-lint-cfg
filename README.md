@@ -8,7 +8,7 @@ They help you to get familiar with our coding style–guides. They also help to 
 
 ### Globally
 
-If you’re installing this repository as a way to lint your files across all our projects, just run the following command in the folder containing your juwai repositories. Linters should then use these files by default if no file is present in a specific reposirory.
+If you’re installing this repository as a way to lint your files across all our projects, just run the following command in the folder containing your juwai repositories. Linters should then use these files by default if no file is present in a specific repository.
 
 ```
 $ npm install juwai/juwai-lint-cfg
