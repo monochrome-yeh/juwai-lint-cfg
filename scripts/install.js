@@ -3,9 +3,7 @@
     'use strict';
 
     var Promise = require( 'bluebird' );
-    var console = require( 'console' );
     var fs      = require( 'fs' );
-    var process = require( 'process' );
 
     var modulePath = process.cwd();
     var files = [
