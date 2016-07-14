@@ -2,11 +2,6 @@
     // Predefined globals.
     // Do not add more unless they can be found in every project.
     "predef": [
-        "window",
-        "document",
-        // jQuery
-        "$",
-        "jQuery",
         // Juwai
         "JW"
     ],
@@ -32,5 +27,14 @@
     "maxdepth": 3,
 
     // Identify possibly unsafe line breaks.
-    "laxbreak": true
+    "laxbreak": true,
+
+    // Standard browser globals e.g. `window`, `document`.
+    "browser": true,
+
+    // Enable globals exposed by jQuery JavaScript library.
+    "jquery": true,
+
+    // Enable globals available when code is running inside of the NodeJS runtime environment.
+    "node": true
 }
