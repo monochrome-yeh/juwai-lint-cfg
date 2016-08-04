@@ -3,7 +3,10 @@
     // Do not add more unless they can be found in every project.
     "predef": [
         // Juwai
-        "JW"
+        "JW",
+
+        // Google Analytics
+        "ga"
     ],
 
     // Use strict equality: ===.
