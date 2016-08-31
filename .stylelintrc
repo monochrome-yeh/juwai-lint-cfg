@@ -15,7 +15,7 @@
             "severity": "warning"
         }],
 
-        "number-zero-length-no-unit": true,
+        "length-zero-no-unit": true,
 
         "string-no-newline": true,
         "string-quotes": "double",
