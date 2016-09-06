@@ -10,7 +10,8 @@
         '.csslintrc',
         '.editorconfig',
         '.jscsrc',
-        '.jshintrc'
+        '.jshintrc',
+        '.stylelintrc'
     ];
 
     // Get the path of the repository, from the first occurrence of `/node_modules/`.
