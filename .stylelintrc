@@ -8,7 +8,7 @@
         "color-named": "never",
         "color-no-invalid-hex": true,
 
-        "font-family-name-quotes": [ "double-where-recommended", {
+        "font-family-name-quotes": [ "always-where-recommended", {
             "severity": "warning"
         }],
         "font-weight-notation": [ "numeric", {
