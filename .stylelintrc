@@ -8,14 +8,14 @@
         "color-named": "never",
         "color-no-invalid-hex": true,
 
-        "font-family-name-quotes": [ "double-where-recommended", {
+        "font-family-name-quotes": [ "always-where-recommended", {
             "severity": "warning"
         }],
         "font-weight-notation": [ "numeric", {
             "severity": "warning"
         }],
 
-        "number-zero-length-no-unit": true,
+        "length-zero-no-unit": true,
 
         "string-no-newline": true,
         "string-quotes": "double",
