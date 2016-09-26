@@ -29,6 +29,8 @@
         "value-list-comma-space-before": "never",
 
         "custom-property-no-outside-root": true,
+        
+        "property-no-unknown": true,
 
         "declaration-bang-space-after": "never",
         "declaration-bang-space-before": "always",
