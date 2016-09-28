@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/juwai/juwai-lint-cfg#readme",
   "dependencies": {
-    "bluebird": "^3.0.5"
+    "bluebird": "^3.0.5",
+    "stylelint": "^7.3.1"
   }
 }
