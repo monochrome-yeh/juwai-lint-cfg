@@ -113,7 +113,6 @@
         "case",
         "continue",
         "debugger",
-        "default",
         "delete",
         "do",
         "for",
@@ -180,5 +179,9 @@
         "requireHyphenBeforeDescription": true,
         "requireNewlineAfterDescription": true,
         "requireDescriptionCompleteSentence": true
-    }
+    },
+
+    "disallowTrailingComma": true,
+    "disallowSemicolons": true,
+    "requireSemicolons": false
 }

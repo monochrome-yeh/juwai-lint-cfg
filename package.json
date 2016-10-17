@@ -1,11 +1,9 @@
 {
   "name": "juwai-lint-cfg",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": ".rc files used by travis and other linting tools at Juwai",
   "main": "index.js",
-  "scripts": {
-    "install": "node scripts/install.js"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/juwai/juwai-lint-cfg.git"
@@ -20,7 +18,5 @@
     "url": "https://github.com/juwai/juwai-lint-cfg/issues"
   },
   "homepage": "https://github.com/juwai/juwai-lint-cfg#readme",
-  "dependencies": {
-    "bluebird": "^3.0.5"
-  }
+  "dependencies": {}
 }
